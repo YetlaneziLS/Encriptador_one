@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" type="imagen/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- ========= Header =========-->
+    <header class="header"
+        <div class="nav__header">
+            <div class="nav__logo">
+                <div class="nav__logo-img">
+                    <a href="#">
+                        <img src="./assets/img/logo.svg" alt="logo alura" class="nav__logo-img-img">
+                    </a>
+                </div>
+                <h3 class="nav__logo-h3">Alura</h3>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- ======= Encriptador =======-->
+        <div class="encriptador__completo">
+            <textarea class="encriptador__escritura" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="aviso__encriptacion">
+                <img src="./assets/img/aviso.svg" alt="Imagen de aviso" class="img-aviso">
+                <p class="texto-aviso">Solo minúsculas, acentos no permitidos</p>
+            </div>
+            <div class="encriptador__container">
+                <button type="submit" class="btn__encriptar">Encriptar</button>
+                <button type="submit" class="btn__desencriptar">Desencriptar</button>
+            
+            </div>
+        </div>
+
+    <!-- ======= Tarjeta =======-->
+        <section class="tarjeta">
+            <div class="tarjeta__container">
+                <img src="./assets/img/muñeco.svg" alt="Imagen ilustrativa" class="img-lupa">
+                <h2 class="texto__mensaje-nulo">Ningún mensaje fue encontrado</h2>
+                <h3 class="texto__mensaje-ingreso">Ingrese el texto que deseas encriptar o desencriptar.</h3>
+            </div>
+            <textarea type= "mensaje" class="encriptador__resultado" readonly></textarea>
+            <button type="submit" class="btn__copiar">Copiar texto</button>
+        </section>
+    </div>
+    <!-- ======= Footer =======-->
+        <footer>
+            <p class="copyright">&copy; 2024- Encriptador - Yetlanezi Linares</p>
+            <a href="#">
+                <img src="./assets/img/github.svg" alt="github" class="github">
+            </a>
+        </footer>
+
+    <!--####### Scripts ######-->
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
